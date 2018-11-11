@@ -1,7 +1,7 @@
 const startButton = document.querySelector('#btn__reset');
 const keys = document.querySelectorAll('.keyrow > button');
 const startScreen = document.querySelector('#overlay');
-
+//let game = null;
 function resetDisplay() {
   startScreen.style.display = 'none';
 }
