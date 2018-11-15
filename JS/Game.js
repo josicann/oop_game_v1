@@ -30,7 +30,7 @@ class Game {
 }
   removeLife() {
     this.missed ++;
-    const lives = document.querySelectorAll('#scoreboard ol > li');
+    let lives = document.querySelectorAll('#scoreboard ol > li');
     if(this.missed === 5) {
       this.gameOver()
     }else{
