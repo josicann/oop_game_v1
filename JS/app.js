@@ -30,8 +30,20 @@ startButton.addEventListener('click', function(){
 function addKeysBtnClickEvents() {
   for (let key of keys) {
     key.addEventListener('click', function(event){
-      markButton(event.target);
+      markButton(event.target)
     });
   }
 }
+
+function addKeysKeyboardClickEvents(){
+  document.addEventListener('keydown', (event) =>{
+    for(let i = 0; i < keys.length; i++) {
+      if (keys[i].textContent === event.key) {
+        markButton(keys[i]);
+      }
+    }
+  });
+}
+
+addKeysKeyboardClickEvents();
 addKeysBtnClickEvents();

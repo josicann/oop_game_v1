@@ -43,7 +43,6 @@ class Game {
     }
     let liPhrases = document.querySelectorAll('#phrase > ul li');
     for(let element = 0; element < liPhrases.length; element += 1) {
-      console.log(element);
       if (liPhrases[element].className.includes("hide") && !liPhrases[element].className.includes("space")) {
         return false;
       }
